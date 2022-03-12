@@ -3,7 +3,6 @@ const lowd = (value: string|number|boolean) => {
   //   return value.toUpperCase();
   // else if (typeof value === 'number')
   //   return value.toString().toUpperCase();
-  
   return value.toString().toUpperCase();
 }
 
