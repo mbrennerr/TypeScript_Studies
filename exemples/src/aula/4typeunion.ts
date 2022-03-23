@@ -1,0 +1,1 @@
+const anoNascimento: number | Boolean = 1987; 

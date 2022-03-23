@@ -1,0 +1,1 @@
+const pessoa: [string, number, boolean] = ['Emerson Master Plus', 50, true];
