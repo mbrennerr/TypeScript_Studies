@@ -10,8 +10,6 @@ const setUnits:string[] =
 'quilometro',
 ]
 
-
-
 export const convert =(valor: number, Ubase:string, Uconvertion: string):number =>{
 let indexBase = setUnits.indexOf(Ubase)
 let indexConvertion = setUnits.indexOf(Uconvertion)
