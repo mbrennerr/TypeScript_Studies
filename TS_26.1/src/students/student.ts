@@ -1,13 +1,13 @@
 export enum Module {
-  fundamentos,
-  front,
-  back,
-  CS,
+	fundamentos,
+	front,
+	back,
+	CS,
 }
 type Student = {
-  name: string;
-  age: number;
-  module: Module;
+	name: string;
+	age: number;
+	module: Module;
 };
 
 const students: Student[] = [];
@@ -15,6 +15,7 @@ const students: Student[] = [];
 export const addStudent = (student: Student) => students.push(student);
 
 export const getStudents = (): Student[] => students;
+//poderia retornar o => [..students], pra certificar que ninguém poderia elterar os valores iniciais;
 
 // export const printStudent = (student: string) => {
 //   if (typeof student === 'string') {
