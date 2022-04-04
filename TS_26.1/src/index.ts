@@ -5,16 +5,16 @@ import express, { Express, Request, Response } from 'express';
 const app: Express = express();
 
 app.get('/', (req: Request, res: Response, next: Function) => {
-  return res.status(200).json(getStudents());
+	return res.status(200).json(getStudents());
 });
 
 app.post('/', (req: Request, res: Response, next: Function) => {
-  addStudent({
-        name: 'Zambs',
-        age: 34,
-        module: Module.back,
-      });
-  return res.status(201).end();
+	addStudent({
+		name: 'Zambs',
+		age: 34,
+		module: Module.back,
+	});
+	return res.status(201).end();
 });
 
 app.listen(3000, () => console.log('T15 na 3000'));
